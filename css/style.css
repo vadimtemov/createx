@@ -1746,7 +1746,7 @@ background-color: #7772F1;
     /* ------------------------------------------------------------ */
     .burger {
         position: fixed;
-        top: 10px;
+        top: 15px;
         right: 10px;
         z-index: 150;
         transition: all .3s;
@@ -1780,6 +1780,32 @@ background-color: #7772F1;
         border-radius: 50%;
         background-color: rgb(244, 242, 242);
         box-shadow: 3px 1px 16px #424551;
+    }
+    .burger--close {
+        position: fixed;
+        top: 25px;
+        right: 45px;
+        z-index: 150;
+        transition: all .3s;
+    }
+    .burger--close span {
+        display: none;
+    }
+    .burger--close::before,
+    .burger--close::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 4px;
+        border-radius: 3px;
+        background-color: #424551;
+    }
+    .burger--close::before {
+        transform: rotate(45deg); 
+    }
+    .burger--close::after {
+        transform: rotate(-45deg);
     }
     .header {
         padding-top: 92px;
