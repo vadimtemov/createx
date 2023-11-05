@@ -99,6 +99,7 @@ $('.burger, .overlay, .header__top a').on('click', function (e) {
     e.preventDefault()
     $('.header__top').toggleClass('header__top--open')
     $('.overlay').toggleClass('overlay--show')
+    $('.burger').toggleClass('burger--close')
 })
 
 $('.footer__top-title--slide').on('click', function () {
